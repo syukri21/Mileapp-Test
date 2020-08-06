@@ -39,17 +39,24 @@ cp .env.example .env
 
 # running in development mode, you can use live-reload when safe file
 docker-compose up -d
+```
+install composer if first time run
 
-# install composer if first time run
+```bash
 # access container app
 docker exec -it app /bin/sh 
 # run install package 
 composer install --ignore-platform-reqs
+```
 
+## How to stop
+
+```bash
 # remove container
 docker-compose down
-
 ```
+
+
 
 ```bash
 # running in local/without docker
