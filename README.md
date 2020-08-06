@@ -38,7 +38,7 @@ There are two ways to run this application, with docker or without docker
 # copy .env
 cp .env.example .env
 
-# running in development mode, you can use live-reload when safe file
+# running in development mode
 docker-compose up -d
 ```
 first time run? install composer 
