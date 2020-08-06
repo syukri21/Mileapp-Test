@@ -2,13 +2,21 @@
 
 ## Feature
 
-- Clean code (DDD)
-- Gin Framework
-- Docker and docker-compose
-- ORM with gorm
-- Pub/Sub with kafka
-- Integration testing
-- Integration with github actions
+- Create Package 
+- Store Package 
+- Update Package 
+- Patch Package 
+- Delete Package 
+- Get Package 
+- Get All Package 
+- Swagger Documentation  
+- Testing  
+- Docker  
+
+
+
+
+
 
 ## How to Build
 
