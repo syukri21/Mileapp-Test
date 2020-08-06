@@ -1,0 +1,261 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-08-06T06:13:22.367Z",
+    "__export_source": "insomnia.desktop.app:v2020.3.3",
+    "resources": [
+        {
+            "_id": "req_f1069a7dbfdb4715ac37b513aa90b2ce",
+            "authentication": {},
+            "body": {},
+            "created": 1596630163545,
+            "description": "",
+            "headers": [],
+            "isPrivate": false,
+            "metaSortKey": -1596630163545,
+            "method": "GET",
+            "modified": 1596651881694,
+            "name": "Package By Id",
+            "parameters": [],
+            "parentId": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ API }}/package/{{ package.id }}",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "created": 1596624474105,
+            "description": "",
+            "modified": 1596624474105,
+            "name": "Mileapps",
+            "parentId": null,
+            "scope": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_1282a22125b84da6983b14c638d6e5e0",
+            "authentication": {},
+            "body": {},
+            "created": 1596624486073,
+            "description": "",
+            "headers": [],
+            "isPrivate": false,
+            "metaSortKey": -1596624486073,
+            "method": "GET",
+            "modified": 1596624521753,
+            "name": "Pacakge",
+            "parameters": [],
+            "parentId": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ API }}/package",
+            "_type": "request"
+        },
+        {
+            "_id": "req_614fbeb3831b43f8844d2591dca18469",
+            "authentication": {},
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"customer_name\": \"PT. AMARA PRIMATIGA 22\",\n  \"customer_code\": \"1678593\",\n  \"transaction_amount\": 70700,\n  \"transaction_discount\": 0,\n  \"transaction_additional_field\": null,\n  \"transaction_payment_type\": 29,\n  \"transaction_state\": \"PAID\",\n  \"transaction_code\": \"CGKFT20200715121\",\n  \"transaction_order\": 121,\n  \"location_id\": \"5cecb20b6c49615b174c3e74\",\n  \"transaction_payment_type_name\": \"Invoice\",\n  \"transaction_cash_amount\": 0,\n  \"transaction_cash_change\": 0,\n  \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-efa7012092ed\",\n  \"custom_field\": {\n    \"catatan_tambahan\": \"JANGAN DI BANTING \\/ DI TINDIH\"\n  }\n}"
+            },
+            "created": 1596626818840,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_f37513584af54f439515654b4eec031a",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "description": "",
+                    "id": "pair_778a462b0daa433da109cbee9df52602",
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1596617667460.5,
+            "method": "POST",
+            "modified": 1596684429159,
+            "name": "Pacakge",
+            "parameters": [],
+            "parentId": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ API }}/package",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9f5c198ce6b243bf8e736bfae98607e9",
+            "authentication": {},
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"customer_name\": \"PT. AMARA PRIMATIGA\",\n\t\"customer_code\": \"1678593\",\n\t\"transaction_amount\": \"70700\",\n\t\"transaction_discount\": \"0\",\n\t\"transaction_additional_field\": null,\n\t\"transaction_payment_type\": \"29\",\n\t\"transaction_state\": \"PAID\",\n\t\"transaction_code\": \"CGKFT20200715121\",\n\t\"transaction_order\": 121,\n\t\"location_id\": \"5cecb20b6c49615b174c3e74\",\n\t\"transaction_payment_type_name\": \"Invoice\",\n\t\"transaction_cash_amount\": 0,\n\t\"transaction_cash_change\": 0,\n\t\"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\",\n\t\"custom_field\": {\n\t\t\"catatan_tambahan\": \"JANGAN DI BANTING \\/ DI TINDIH YAAA\"\n\t}\n}"
+            },
+            "created": 1596631667345,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_f37513584af54f439515654b4eec031a",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "description": "",
+                    "id": "pair_778a462b0daa433da109cbee9df52602",
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1596615962807.375,
+            "method": "PUT",
+            "modified": 1596652509294,
+            "name": "Pacakge",
+            "parameters": [],
+            "parentId": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": " {{ API }}/package/{{ package.id }}",
+            "_type": "request"
+        },
+        {
+            "_id": "req_7c3daee1783a413e999b366f509e5d42",
+            "authentication": {},
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"customer_name\": \"PT. MILEAPPS\"\n}"
+            },
+            "created": 1596651753267,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_f37513584af54f439515654b4eec031a",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "description": "",
+                    "id": "pair_778a462b0daa433da109cbee9df52602",
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1596613405827.6875,
+            "method": "PATCH",
+            "modified": 1596652804034,
+            "name": "Package",
+            "parameters": [],
+            "parentId": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ API }}/package/{{ package.id }}",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8d830415fabe4f419fdadcddcb9ceb55",
+            "authentication": {},
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "created": 1596651077676,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_f37513584af54f439515654b4eec031a",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "description": "",
+                    "id": "pair_778a462b0daa433da109cbee9df52602",
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1596612553501.125,
+            "method": "DELETE",
+            "modified": 1596652621218,
+            "name": "Package",
+            "parameters": [],
+            "parentId": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ API }}/package/{{ package.id }}",
+            "_type": "request"
+        },
+        {
+            "_id": "env_973044fe7933d5d5678c2d92b028b5ab6374b2e8",
+            "color": null,
+            "created": 1596624474527,
+            "data": {
+                "API": "127.0.0.1/api/v1",
+                "package": {
+                    "id": "{% response 'body', 'req_1282a22125b84da6983b14c638d6e5e0', 'b64::JC5kYXRhWzBdLnRyYW5zYWN0aW9uX2lk::46b', 'never', 60 %}"
+                }
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "API",
+                    "package"
+                ],
+                "&~|package": [
+                    "id"
+                ]
+            },
+            "isPrivate": false,
+            "metaSortKey": 1596624474527,
+            "modified": 1596652406110,
+            "name": "Base Environment",
+            "parentId": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_973044fe7933d5d5678c2d92b028b5ab6374b2e8",
+            "cookies": [],
+            "created": 1596624474532,
+            "modified": 1596624474532,
+            "name": "Default Jar",
+            "parentId": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_c8521208f41f42b09c904adda0ce4d46",
+            "contentType": "yaml",
+            "contents": "",
+            "created": 1596624474114,
+            "fileName": "Mileapps",
+            "modified": 1596624474114,
+            "parentId": "wrk_8d0692adb0f048b888337dcd35ffb49c",
+            "_type": "api_spec"
+        }
+    ]
+}
