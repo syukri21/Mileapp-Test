@@ -1,0 +1,71 @@
+version: "3"
+services:
+  #PHP Service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mileapp/laravel
+    container_name: app
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+    working_dir: /var/www
+    networks:
+      - mileapp
+    volumes:
+      - ./:/var/www
+      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    depends_on:
+      - db
+      - webserver
+
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    container_name: webserver
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - mileapp
+    volumes:
+      - ./:/var/www
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+
+  #MySQL Service
+  db:
+    image: mongo:latest
+    container_name: db
+    restart: always
+    tty: true
+    ports:
+      - "27017:27017"
+    expose:
+      # Opens port 3306 on the container
+      - "27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: mileapp
+    volumes:
+      - ./mongo/initdb.js:/docker-entrypoint-initdb.d/initdb.js:ro
+      - dbdata:/data/db
+    networks:
+      - mileapp
+
+
+#Docker Networks
+networks:
+  mileapp:
+    external:
+      name: mileapp
+
+#Volumes
+volumes:
+  dbdata:
+    driver: local
