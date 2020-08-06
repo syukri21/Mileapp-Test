@@ -1,4 +1,4 @@
-<h1 align="center">Mileapp Test</h1>
+<h1 align="center">Mileapp Test - Backend</h1>
 
 ## Feature
 
@@ -9,6 +9,7 @@
 - Delete Package 
 - Get Package 
 - Get All Package 
+- MongoDB
 - Swagger Documentation  
 - Testing  
 - Docker  
@@ -18,7 +19,7 @@
 
 
 
-## How to Build
+## How to build
 
 Before run build the app
 
@@ -40,7 +41,7 @@ cp .env.example .env
 # running in development mode, you can use live-reload when safe file
 docker-compose up -d
 ```
-install composer if first time run
+first time run? install composer 
 
 ```bash
 # access container app
@@ -77,8 +78,8 @@ php artisan test
 ```
 ## Swagger Documentation 
 
-Swagger Documentation run in http://localhost/api/documentation
-API Prefix run in http://localhost/api/v1/
+- Swagger Documentation run in http://localhost/api/documentation
+- API Prefix run in http://localhost/api/v1/
 
 
 ## Stay in touch
