@@ -58,7 +58,6 @@ docker-compose down
 ```
 
 
-
 ```bash
 # running in local/without docker
 
@@ -76,10 +75,16 @@ php artisan serve
 ```bash
 php artisan test
 ```
-## Swagger Documentation 
+## Application 
 
 - Swagger Documentation run in http://localhost/api/documentation
 - API Prefix run in http://localhost/api/v1/
+- Greetings run in http://localhost
+
+
+## Insomnia JSON
+
+- "./insomnia-export.json"
 
 
 ## Stay in touch
