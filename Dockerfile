@@ -62,4 +62,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Expose port 9000 and start php-fpm server
 
 EXPOSE 9000
-CMD ["composer install --ignore-platform-reqs",  "php-fpm"]
+CMD ["php-fpm"]
