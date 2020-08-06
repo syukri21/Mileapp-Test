@@ -17,7 +17,7 @@ class PackageTest extends TestCase
 
     public function testStore()
     {
-        $path = storage_path() . "/app/package-test/store.json";
+        $path = storage_path() . "/package-test/store.json";
         $json = json_decode(File::get($path), true);
         $response = $this->json('post', '/api/v1/package', $json);
         $response
@@ -48,7 +48,7 @@ class PackageTest extends TestCase
     public function testUpdate()
     {
 
-        $path = storage_path() . "/app/package-test/update.json";
+        $path = storage_path() . "/package-test/update.json";
         $json = json_decode(File::get($path), true);
         $response = $this->json('put', '/api/v1/package/' . $this->getId(), $json);
         $response
@@ -59,7 +59,7 @@ class PackageTest extends TestCase
 
     public function testUpdatePatch()
     {
-        $path = storage_path() . "/app/package-test/update.json";
+        $path = storage_path() . "/package-test/update.json";
         $json = json_decode(File::get($path), true);
         $response = $this->json('patch', '/api/v1/package/' . $this->getId(), $json);
         $response
@@ -71,7 +71,7 @@ class PackageTest extends TestCase
     public function testDelete()
     {
 
-        $path = storage_path() . "/app/package-test/update.json";
+        $path = storage_path() . "/package-test/update.json";
         $response = $this->json('delete', '/api/v1/package/' . $this->getId());
         $response
             ->assertStatus(200)
